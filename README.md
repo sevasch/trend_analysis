@@ -1,6 +1,5 @@
 # Google Trend Analysis
-This script shows the most popular search terms for specific languages, regions and years. They are arranged chronologically based on the month of highest relative popularity. Here, an example: 
-![example_trends](example.png)
+This script shows the most popular search terms for specific languages, regions and years. They are arranged chronologically based on the month of highest relative popularity. 
 
 ## Options
 <table>
@@ -21,3 +20,12 @@ This script shows the most popular search terms for specific languages, regions 
 ## Dependencies
 * __pytrends__ is used to get the information
 * __matplotlib__ is used to generate the plot
+
+## Example
+Let's display the most popular _german_ search terms in _Switzerland_ for the year _2020_: 
+```
+python toptrends.py --year 2020 --language de --region CH
+```
+
+The result should look like this: 
+![example_trends](example.png)
